@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ถึงคนที่เรารักที่สุด</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Kanit', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #ffd6e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #5c0034;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 500px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+
+    .heart {
+      font-size: 3em;
+      color: #ff3366;
+      animation: pulse 1.5s infinite;
+      margin: 20px 0;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello baby</h1>
-    <h1>Hello baby</h1>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>ถึงที่รักของเรา</h1>
+    <p>
+      แค่อยากบอกว่า...<br/>
+      เรารักเธอที่สุดในโลกเลยนะ 🥰<br/>
+      ขอบคุณที่อยู่ข้างๆ กันเสมอ<br/>
+      ไม่ว่าจะเจออะไร เราจะผ่านมันไปด้วยกันนะ 💑
+    </p>
+    <div class="footer">
+      จากหัวใจของเรา 💌
+    </div>
+  </div>
 </body>
 </html>
